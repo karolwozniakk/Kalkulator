@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="312.0" prefWidth="524.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+    <children>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="143.0" prefHeight="35.0" prefWidth="219.0" text="Konwerter jednostek" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <TabPane layoutX="-2.0" layoutY="42.0" prefHeight="225.0" prefWidth="526.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="  Długość  ">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="196.0" prefWidth="410.0">
+                            <children>
+                                <Button fx:id="obliczanie2" layoutX="224.0" layoutY="110.0" mnemonicParsing="false" onAction="#oblicz2" prefHeight="25.0" prefWidth="75.0" text="&lt;- Oblicz" AnchorPane.leftAnchor="224.0" AnchorPane.rightAnchor="224.0" />
+                                <TextField fx:id="wejscie1" layoutX="224.0" layoutY="32.0" prefHeight="26.0" prefWidth="79.0" promptText="Wpisz wartość" AnchorPane.leftAnchor="224.0" AnchorPane.rightAnchor="224.0" AnchorPane.topAnchor="32.0" />
+                                <TextField fx:id="wyjscie1" layoutX="228.0" layoutY="150.0" prefHeight="26.0" prefWidth="70.0" AnchorPane.leftAnchor="224.0" AnchorPane.rightAnchor="224.0" />
+                                <Button fx:id="obliczanie1" layoutX="224.0" layoutY="73.0" mnemonicParsing="false" onAction="#oblicz1" prefHeight="25.0" prefWidth="78.0" text="Oblicz -&gt;" AnchorPane.leftAnchor="224.0" AnchorPane.rightAnchor="224.0" />
+                                <RadioButton fx:id="kilometr1" layoutX="25.0" layoutY="22.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="kilometr" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="25.0">
+                                    <toggleGroup>
+                                        <ToggleGroup fx:id="input1" />
+                                    </toggleGroup>
+                                </RadioButton>
+                                <RadioButton fx:id="milam1" layoutX="15.0" layoutY="132.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="mila morska" toggleGroup="$input1" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="105.0" />
+                                <RadioButton fx:id="centymetr1" layoutX="24.0" layoutY="63.0" mnemonicParsing="false" prefWidth="90.0" text="centymetr" toggleGroup="$input1" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="65.0" />
+                                <RadioButton fx:id="metr1" layoutX="22.0" layoutY="46.0" mnemonicParsing="false" prefWidth="90.0" text="metr" toggleGroup="$input1" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="45.0" />
+                                <RadioButton fx:id="mila1" layoutX="23.0" layoutY="115.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="mila" toggleGroup="$input1" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="85.0" />
+                                <RadioButton fx:id="cal1" layoutX="27.0" layoutY="151.0" mnemonicParsing="false" prefWidth="90.0" text="cal" toggleGroup="$input1" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="125.0" />
+                                <RadioButton fx:id="jard1" layoutX="69.0" layoutY="214.0" mnemonicParsing="false" prefWidth="90.0" text="jard" toggleGroup="$input1" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="165.0" />
+                                <RadioButton fx:id="stopa1" layoutX="20.0" layoutY="176.0" mnemonicParsing="false" prefWidth="90.0" text="stopa" toggleGroup="$input1" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="145.0" />
+                                <RadioButton fx:id="kilometr2" layoutX="392.0" layoutY="29.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="kilometr" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
+                                    <toggleGroup>
+                                        <ToggleGroup fx:id="outputdlugosc1" />
+                                    </toggleGroup>
+                                </RadioButton>
+                                <RadioButton fx:id="milam2" layoutX="382.0" layoutY="139.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="mila morska" toggleGroup="$outputdlugosc1" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="105.0" />
+                                <RadioButton fx:id="centymetr2" layoutX="391.0" layoutY="70.0" mnemonicParsing="false" prefWidth="90.0" text="centymetr" toggleGroup="$outputdlugosc1" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="65.0" />
+                                <RadioButton fx:id="metr2" layoutX="403.0" layoutY="45.0" mnemonicParsing="false" prefWidth="90.0" text="metr" toggleGroup="$outputdlugosc1" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="45.0" />
+                                <RadioButton fx:id="mila2" layoutX="390.0" layoutY="122.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="mila" toggleGroup="$outputdlugosc1" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="85.0" />
+                                <RadioButton fx:id="cal2" layoutX="394.0" layoutY="158.0" mnemonicParsing="false" prefWidth="90.0" text="cal" toggleGroup="$outputdlugosc1" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="125.0" />
+                                <RadioButton fx:id="jard2" layoutX="436.0" layoutY="221.0" mnemonicParsing="false" prefWidth="90.0" text="jard" toggleGroup="$outputdlugosc1" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="165.0" />
+                                <RadioButton fx:id="stopa2" layoutX="387.0" layoutY="183.0" mnemonicParsing="false" prefWidth="90.0" text="stopa" toggleGroup="$outputdlugosc1" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="145.0" />
+                        <Label fx:id="inn" layoutX="304.0" layoutY="37.0" prefHeight="16.0" prefWidth="32.0" />
+                        <Label fx:id="outt" layoutX="303.0" layoutY="157.0" prefHeight="16.0" prefWidth="34.0" />
+                        <Label fx:id="alert1" layoutX="245.0" layoutY="55.0" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="  Powierzchnia  ">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="220.0" prefWidth="526.0">
+                            <children>
+                                <Button layoutX="224.0" layoutY="110.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="&lt;- Oblicz" AnchorPane.leftAnchor="224.0" AnchorPane.rightAnchor="224.0" />
+                                <TextField layoutX="190.0" layoutY="30.0" promptText="Wpisz wartość" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="190.0" AnchorPane.topAnchor="30.0" />
+                                <TextField layoutX="190.0" layoutY="153.0" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="190.0" />
+                                <Button layoutX="224.0" layoutY="73.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" text="Oblicz -&gt;" AnchorPane.leftAnchor="224.0" AnchorPane.rightAnchor="224.0" />
+                                <RadioButton layoutX="25.0" layoutY="22.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="138.0" text="kilometr ^2" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="363.0" AnchorPane.topAnchor="25.0">
+                                    <toggleGroup>
+                                        <ToggleGroup fx:id="inputdlugosc" />
+                                    </toggleGroup>
+                                </RadioButton>
+                                <RadioButton layoutX="15.0" layoutY="132.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="hektar" toggleGroup="$inputdlugosc" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="363.0" AnchorPane.topAnchor="105.0" />
+                                <RadioButton layoutX="24.0" layoutY="63.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="145.0" text="centymetr ^2" toggleGroup="$inputdlugosc" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="356.0" AnchorPane.topAnchor="65.0" />
+                                <RadioButton layoutX="22.0" layoutY="46.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="142.0" text="metr ^2" toggleGroup="$inputdlugosc" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="359.0" AnchorPane.topAnchor="45.0" />
+                                <RadioButton layoutX="23.0" layoutY="115.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="141.0" text="ar" toggleGroup="$inputdlugosc" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="360.0" AnchorPane.topAnchor="85.0" />
+                                <RadioButton layoutX="27.0" layoutY="151.0" mnemonicParsing="false" prefWidth="90.0" text="mila ^2" toggleGroup="$inputdlugosc" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="363.0" AnchorPane.topAnchor="125.0" />
+                                <RadioButton layoutX="69.0" layoutY="214.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="125.0" text="akr" toggleGroup="$inputdlugosc" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="376.0" AnchorPane.topAnchor="165.0" />
+                                <RadioButton layoutX="20.0" layoutY="176.0" mnemonicParsing="false" prefWidth="90.0" text="cal ^2" toggleGroup="$inputdlugosc" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="363.0" AnchorPane.topAnchor="145.0" />
+                                <RadioButton layoutX="392.0" layoutY="29.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="100.0" text="kilometr ^2" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="25.0">
+                                    <toggleGroup>
+                                        <ToggleGroup fx:id="outputdlugosc" />
+                                    </toggleGroup></RadioButton>
+                                <RadioButton layoutX="382.0" layoutY="139.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="hektar" toggleGroup="$outputdlugosc" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="105.0" />
+                                <RadioButton layoutX="391.0" layoutY="70.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="98.0" text="centymetr ^2" toggleGroup="$outputdlugosc" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="65.0" />
+                                <RadioButton layoutX="403.0" layoutY="45.0" mnemonicParsing="false" prefWidth="90.0" text="metr ^2" toggleGroup="$outputdlugosc" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="45.0" />
+                                <RadioButton layoutX="390.0" layoutY="122.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="ar" toggleGroup="$outputdlugosc" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="85.0" />
+                                <RadioButton layoutX="394.0" layoutY="158.0" mnemonicParsing="false" prefWidth="90.0" text="mila ^2" toggleGroup="$outputdlugosc" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="125.0" />
+                                <RadioButton layoutX="436.0" layoutY="221.0" mnemonicParsing="false" prefWidth="90.0" text="akr" toggleGroup="$outputdlugosc" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="165.0" />
+                                <RadioButton layoutX="387.0" layoutY="183.0" mnemonicParsing="false" prefWidth="90.0" text="cal ^2" toggleGroup="$outputdlugosc" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="145.0" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="  Objętość  ">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="220.0" prefWidth="526.0">
+                            <children>
+                                <Button layoutX="224.0" layoutY="110.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="&lt;- Oblicz" AnchorPane.leftAnchor="224.0" AnchorPane.rightAnchor="224.0" />
+                                <TextField layoutX="190.0" layoutY="30.0" promptText="Wpisz wartość" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="190.0" AnchorPane.topAnchor="30.0" />
+                                <TextField layoutX="190.0" layoutY="153.0" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="190.0" />
+                                <Button layoutX="224.0" layoutY="73.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" text="Oblicz -&gt;" AnchorPane.leftAnchor="224.0" AnchorPane.rightAnchor="224.0" />
+                                <RadioButton layoutX="25.0" layoutY="22.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="metr ^3" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="25.0">
+                                    <toggleGroup>
+                                        <ToggleGroup fx:id="inputdlugosc2" />
+                                    </toggleGroup>
+                                </RadioButton>
+                                <RadioButton layoutX="15.0" layoutY="132.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="hektolitr" toggleGroup="$inputdlugosc2" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="105.0" />
+                                <RadioButton layoutX="24.0" layoutY="63.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="101.0" text="centymetr ^3" toggleGroup="$inputdlugosc2" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="65.0" />
+                                <RadioButton layoutX="22.0" layoutY="46.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="104.0" text="decymetr ^3" toggleGroup="$inputdlugosc2" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="45.0" />
+                                <RadioButton layoutX="23.0" layoutY="115.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="milimetr ^3" toggleGroup="$inputdlugosc2" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="85.0" />
+                                <RadioButton layoutX="27.0" layoutY="151.0" mnemonicParsing="false" prefWidth="90.0" text="litr" toggleGroup="$inputdlugosc2" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="125.0" />
+                                <RadioButton layoutX="69.0" layoutY="214.0" mnemonicParsing="false" prefWidth="90.0" text="cal ^3" toggleGroup="$inputdlugosc2" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="165.0" />
+                                <RadioButton layoutX="20.0" layoutY="176.0" mnemonicParsing="false" prefWidth="90.0" text="mililitr" toggleGroup="$inputdlugosc2" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="145.0" />
+                                <RadioButton layoutX="392.0" layoutY="29.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="metr ^3" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
+                                    <toggleGroup>
+                                        <ToggleGroup fx:id="outputdlugosc2" />
+                                    </toggleGroup>
+                                </RadioButton>
+                                <RadioButton layoutX="382.0" layoutY="139.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="hektolitr" toggleGroup="$outputdlugosc2" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="105.0" />
+                                <RadioButton layoutX="391.0" layoutY="70.0" mnemonicParsing="false" prefWidth="90.0" text="centymetr ^3" toggleGroup="$outputdlugosc2" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="65.0" />
+                                <RadioButton layoutX="403.0" layoutY="45.0" mnemonicParsing="false" prefWidth="90.0" text="decymetr ^3" toggleGroup="$outputdlugosc2" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="45.0" />
+                                <RadioButton layoutX="390.0" layoutY="122.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="milimetr ^3" toggleGroup="$outputdlugosc2" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="85.0" />
+                                <RadioButton layoutX="394.0" layoutY="158.0" mnemonicParsing="false" prefWidth="90.0" text="litr" toggleGroup="$outputdlugosc2" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="125.0" />
+                                <RadioButton layoutX="436.0" layoutY="221.0" mnemonicParsing="false" prefWidth="90.0" text="cal ^3" toggleGroup="$outputdlugosc2" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="165.0" />
+                                <RadioButton layoutX="387.0" layoutY="183.0" mnemonicParsing="false" prefWidth="90.0" text="mililitr" toggleGroup="$outputdlugosc2" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="145.0" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="  Temperatura  ">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="220.0" prefWidth="526.0">
+                            <children>
+                                <Button layoutX="224.0" layoutY="110.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="&lt;- Oblicz" AnchorPane.leftAnchor="224.0" AnchorPane.rightAnchor="224.0" />
+                                <TextField layoutX="190.0" layoutY="30.0" promptText="Wpisz wartość" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="190.0" AnchorPane.topAnchor="30.0" />
+                                <TextField layoutX="190.0" layoutY="153.0" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="190.0" />
+                                <Button layoutX="224.0" layoutY="73.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" text="Oblicz -&gt;" AnchorPane.leftAnchor="224.0" AnchorPane.rightAnchor="224.0" />
+                                <RadioButton layoutX="25.0" layoutY="22.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="Celcjusz" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="25.0">
+                                    <toggleGroup>
+                                        <ToggleGroup fx:id="inputdlugosc3" />
+                                    </toggleGroup>
+                                </RadioButton>
+                                <RadioButton layoutX="24.0" layoutY="63.0" mnemonicParsing="false" prefWidth="90.0" text="Kelvin" toggleGroup="$inputdlugosc3" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="65.0" />
+                                <RadioButton layoutX="22.0" layoutY="46.0" mnemonicParsing="false" prefWidth="90.0" text="Fahrenheit" toggleGroup="$inputdlugosc3" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="45.0" />
+                                <RadioButton layoutX="392.0" layoutY="29.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="Celcjusz" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
+                                    <toggleGroup>
+                                        <ToggleGroup fx:id="outputdlugosc3" />
+                                    </toggleGroup>
+                                </RadioButton>
+                                <RadioButton layoutX="391.0" layoutY="70.0" mnemonicParsing="false" prefWidth="90.0" text="Kelvin" toggleGroup="$outputdlugosc3" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="65.0" />
+                                <RadioButton layoutX="403.0" layoutY="45.0" mnemonicParsing="false" prefWidth="90.0" text="Fahrenheit" toggleGroup="$outputdlugosc3" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="45.0" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="  Prędkość  ">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="220.0" prefWidth="526.0">
+                            <children>
+                                <Button layoutX="224.0" layoutY="110.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="&lt;- Oblicz" AnchorPane.leftAnchor="224.0" AnchorPane.rightAnchor="224.0" />
+                                <TextField layoutX="190.0" layoutY="30.0" promptText="Wpisz wartość" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="190.0" AnchorPane.topAnchor="30.0" />
+                                <TextField layoutX="190.0" layoutY="153.0" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="190.0" />
+                                <Button layoutX="224.0" layoutY="73.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" text="Oblicz -&gt;" AnchorPane.leftAnchor="224.0" AnchorPane.rightAnchor="224.0" />
+                                <RadioButton layoutX="25.0" layoutY="22.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="kilometr" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="25.0">
+                                    <toggleGroup>
+                                        <ToggleGroup fx:id="inputdlugosc4" />
+                                    </toggleGroup>
+                                </RadioButton>
+                                <RadioButton layoutX="15.0" layoutY="132.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="mila morska" toggleGroup="$inputdlugosc4" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="105.0" />
+                                <RadioButton layoutX="24.0" layoutY="63.0" mnemonicParsing="false" prefWidth="90.0" text="centymetr" toggleGroup="$inputdlugosc4" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="65.0" />
+                                <RadioButton layoutX="22.0" layoutY="46.0" mnemonicParsing="false" prefWidth="90.0" text="metr" toggleGroup="$inputdlugosc4" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="45.0" />
+                                <RadioButton layoutX="23.0" layoutY="115.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="mila" toggleGroup="$inputdlugosc4" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="85.0" />
+                                <RadioButton layoutX="27.0" layoutY="151.0" mnemonicParsing="false" prefWidth="90.0" text="cal" toggleGroup="$inputdlugosc4" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="125.0" />
+                                <RadioButton layoutX="69.0" layoutY="214.0" mnemonicParsing="false" prefWidth="90.0" text="jard" toggleGroup="$inputdlugosc4" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="165.0" />
+                                <RadioButton layoutX="20.0" layoutY="176.0" mnemonicParsing="false" prefWidth="90.0" text="stopa" toggleGroup="$inputdlugosc4" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="145.0" />
+                                <RadioButton layoutX="392.0" layoutY="29.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="kilometr" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
+                                    <toggleGroup>
+                                        <ToggleGroup fx:id="outputdlugosc4" />
+                                    </toggleGroup>
+                                </RadioButton>
+                                <RadioButton layoutX="382.0" layoutY="139.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="mila morska" toggleGroup="$outputdlugosc4" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="105.0" />
+                                <RadioButton layoutX="391.0" layoutY="70.0" mnemonicParsing="false" prefWidth="90.0" text="centymetr" toggleGroup="$outputdlugosc4" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="65.0" />
+                                <RadioButton layoutX="403.0" layoutY="45.0" mnemonicParsing="false" prefWidth="90.0" text="metr" toggleGroup="$outputdlugosc4" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="45.0" />
+                                <RadioButton layoutX="390.0" layoutY="122.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="mila" toggleGroup="$outputdlugosc4" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="85.0" />
+                                <RadioButton layoutX="394.0" layoutY="158.0" mnemonicParsing="false" prefWidth="90.0" text="cal" toggleGroup="$outputdlugosc4" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="125.0" />
+                                <RadioButton layoutX="436.0" layoutY="221.0" mnemonicParsing="false" prefWidth="90.0" text="jard" toggleGroup="$outputdlugosc4" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="165.0" />
+                                <RadioButton layoutX="387.0" layoutY="183.0" mnemonicParsing="false" prefWidth="90.0" text="stopa" toggleGroup="$outputdlugosc4" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="145.0" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="  Czas  ">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="220.0" prefWidth="526.0">
+                            <children>
+                                <Button layoutX="224.0" layoutY="110.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="&lt;- Oblicz" AnchorPane.leftAnchor="224.0" AnchorPane.rightAnchor="224.0" />
+                                <TextField layoutX="190.0" layoutY="30.0" promptText="Wpisz wartość" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="190.0" AnchorPane.topAnchor="30.0" />
+                                <TextField layoutX="190.0" layoutY="153.0" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="190.0" />
+                                <Button layoutX="224.0" layoutY="73.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" text="Oblicz -&gt;" AnchorPane.leftAnchor="224.0" AnchorPane.rightAnchor="224.0" />
+                                <RadioButton layoutX="25.0" layoutY="22.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="kilometr" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="25.0">
+                                    <toggleGroup>
+                                        <ToggleGroup fx:id="inputdlugosc5" />
+                                    </toggleGroup>
+                                </RadioButton>
+                                <RadioButton layoutX="15.0" layoutY="132.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="mila morska" toggleGroup="$inputdlugosc5" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="105.0" />
+                                <RadioButton layoutX="24.0" layoutY="63.0" mnemonicParsing="false" prefWidth="90.0" text="centymetr" toggleGroup="$inputdlugosc5" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="65.0" />
+                                <RadioButton layoutX="22.0" layoutY="46.0" mnemonicParsing="false" prefWidth="90.0" text="metr" toggleGroup="$inputdlugosc5" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="45.0" />
+                                <RadioButton layoutX="23.0" layoutY="115.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="mila" toggleGroup="$inputdlugosc5" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="85.0" />
+                                <RadioButton layoutX="27.0" layoutY="151.0" mnemonicParsing="false" prefWidth="90.0" text="cal" toggleGroup="$inputdlugosc5" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="125.0" />
+                                <RadioButton layoutX="69.0" layoutY="214.0" mnemonicParsing="false" prefWidth="90.0" text="jard" toggleGroup="$inputdlugosc5" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="165.0" />
+                                <RadioButton layoutX="20.0" layoutY="176.0" mnemonicParsing="false" prefWidth="90.0" text="stopa" toggleGroup="$inputdlugosc5" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="145.0" />
+                                <RadioButton layoutX="392.0" layoutY="29.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="kilometr" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
+                                    <toggleGroup>
+                                        <ToggleGroup fx:id="outputdlugosc5" />
+                                    </toggleGroup>
+                                </RadioButton>
+                                <RadioButton layoutX="382.0" layoutY="139.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="mila morska" toggleGroup="$outputdlugosc5" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="105.0" />
+                                <RadioButton layoutX="391.0" layoutY="70.0" mnemonicParsing="false" prefWidth="90.0" text="centymetr" toggleGroup="$outputdlugosc5" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="65.0" />
+                                <RadioButton layoutX="403.0" layoutY="45.0" mnemonicParsing="false" prefWidth="90.0" text="metr" toggleGroup="$outputdlugosc5" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="45.0" />
+                                <RadioButton layoutX="390.0" layoutY="122.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="mila" toggleGroup="$outputdlugosc5" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="85.0" />
+                                <RadioButton layoutX="394.0" layoutY="158.0" mnemonicParsing="false" prefWidth="90.0" text="cal" toggleGroup="$outputdlugosc5" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="125.0" />
+                                <RadioButton layoutX="436.0" layoutY="221.0" mnemonicParsing="false" prefWidth="90.0" text="jard" toggleGroup="$outputdlugosc5" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="165.0" />
+                                <RadioButton layoutX="387.0" layoutY="183.0" mnemonicParsing="false" prefWidth="90.0" text="stopa" toggleGroup="$outputdlugosc5" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="145.0" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="  Masa  ">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="220.0" prefWidth="526.0">
+                            <children>
+                                <Button layoutX="224.0" layoutY="110.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="&lt;- Oblicz" AnchorPane.leftAnchor="224.0" AnchorPane.rightAnchor="224.0" />
+                                <TextField layoutX="190.0" layoutY="30.0" promptText="Wpisz wartość" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="190.0" AnchorPane.topAnchor="30.0" />
+                                <TextField layoutX="190.0" layoutY="153.0" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="190.0" />
+                                <Button layoutX="224.0" layoutY="73.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" text="Oblicz -&gt;" AnchorPane.leftAnchor="224.0" AnchorPane.rightAnchor="224.0" />
+                                <RadioButton layoutX="25.0" layoutY="22.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="kilometr" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="25.0">
+                                    <toggleGroup>
+                                        <ToggleGroup fx:id="inputdlugosc6" />
+                                    </toggleGroup>
+                                </RadioButton>
+                                <RadioButton layoutX="15.0" layoutY="132.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="mila morska" toggleGroup="$inputdlugosc6" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="105.0" />
+                                <RadioButton layoutX="24.0" layoutY="63.0" mnemonicParsing="false" prefWidth="90.0" text="centymetr" toggleGroup="$inputdlugosc6" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="65.0" />
+                                <RadioButton layoutX="22.0" layoutY="46.0" mnemonicParsing="false" prefWidth="90.0" text="metr" toggleGroup="$inputdlugosc6" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="45.0" />
+                                <RadioButton layoutX="23.0" layoutY="115.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="mila" toggleGroup="$inputdlugosc6" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="85.0" />
+                                <RadioButton layoutX="27.0" layoutY="151.0" mnemonicParsing="false" prefWidth="90.0" text="cal" toggleGroup="$inputdlugosc6" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="125.0" />
+                                <RadioButton layoutX="69.0" layoutY="214.0" mnemonicParsing="false" prefWidth="90.0" text="jard" toggleGroup="$inputdlugosc6" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="165.0" />
+                                <RadioButton layoutX="20.0" layoutY="176.0" mnemonicParsing="false" prefWidth="90.0" text="stopa" toggleGroup="$inputdlugosc6" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="145.0" />
+                                <RadioButton layoutX="392.0" layoutY="29.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="kilometr" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
+                                    <toggleGroup>
+                                        <ToggleGroup fx:id="outputdlugosc6" />
+                                    </toggleGroup>
+                                </RadioButton>
+                                <RadioButton layoutX="382.0" layoutY="139.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="mila morska" toggleGroup="$outputdlugosc6" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="105.0" />
+                                <RadioButton layoutX="391.0" layoutY="70.0" mnemonicParsing="false" prefWidth="90.0" text="centymetr" toggleGroup="$outputdlugosc6" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="65.0" />
+                                <RadioButton layoutX="403.0" layoutY="45.0" mnemonicParsing="false" prefWidth="90.0" text="metr" toggleGroup="$outputdlugosc6" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="45.0" />
+                                <RadioButton layoutX="390.0" layoutY="122.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="mila" toggleGroup="$outputdlugosc6" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="85.0" />
+                                <RadioButton layoutX="394.0" layoutY="158.0" mnemonicParsing="false" prefWidth="90.0" text="cal" toggleGroup="$outputdlugosc6" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="125.0" />
+                                <RadioButton layoutX="436.0" layoutY="221.0" mnemonicParsing="false" prefWidth="90.0" text="jard" toggleGroup="$outputdlugosc6" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="165.0" />
+                                <RadioButton layoutX="387.0" layoutY="183.0" mnemonicParsing="false" prefWidth="90.0" text="stopa" toggleGroup="$outputdlugosc6" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="145.0" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+        <Button fx:id="exit" layoutX="439.0" layoutY="272.0" mnemonicParsing="false" onAction="#exitt" text="Wyjdź" />
+    </children>
+</AnchorPane>
