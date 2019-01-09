@@ -81,7 +81,9 @@ public class MainController {
         if (kilometr1.isSelected()) {
             if (metr2.isSelected()) {
 
-                //double x = Double.parseDouble(wejscie1.getText());
+                   //double x = Double.parseDouble(wejscie1.getText());
+
+
                 double x = parseAndCheck();
 
                 wyjscie1.setText(String.valueOf(x*1000));
@@ -99,6 +101,7 @@ public class MainController {
             }
         }
     }
+
 
     public void oblicz2(){
         if (kilometr1.isSelected()) {
