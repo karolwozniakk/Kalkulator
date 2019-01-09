@@ -11,6 +11,8 @@ public class MainController {
     @FXML
     private Label outt;
 
+
+
     @FXML
     private Label alert1;
 
@@ -81,12 +83,12 @@ public class MainController {
         if (kilometr1.isSelected()) {
             if (metr2.isSelected()) {
 
-                   //double x = Double.parseDouble(wejscie1.getText());
+                //double x = Double.parseDouble(wejscie1.getText());
 
 
                 double x = parseAndCheck();
 
-                wyjscie1.setText(String.valueOf(x*1000));
+                wyjscie1.setText(String.valueOf(x * 1000));
                 inn.setText("[km]");
                 outt.setText("[m]");
             }
@@ -94,13 +96,15 @@ public class MainController {
                 //double x = Double.parseDouble(wejscie1.getText());
 
                 double x = parseAndCheck();
-                wyjscie1.setText(String.valueOf(x/1.6093));
+                wyjscie1.setText(String.valueOf(x / 1.6093));
                 inn.setText("[km]");
                 outt.setText("[mil]");
 
             }
         }
     }
+
+
 
 
     public void oblicz2(){
